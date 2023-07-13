@@ -18,6 +18,7 @@
     pwndbg
     pwntools
     ghq
+    gh
   ];
 
   programs.zsh = {
