@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, lib, ... }: {
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -114,6 +114,14 @@
     enable = true;
     enableSSHSupport = true;
     pinentryFlavor = "curses";
+  };
+
+  programs.nix-ld.enable = true;
+  environment.variables = lib.mkDefault {
+    NIX_LD_LIBRARY_PATH = lib.makeLibraryPath [
+      pkgs.stdenv.cc.cc
+    ];
+    NIX_LD = lib.fileContents "${pkgs.stdenv.cc}/nix-support/dynamic-linker";
   };
 
   system.stateVersion = "23.05";

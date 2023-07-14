@@ -1,10 +1,10 @@
 .PHONY: nixos/init
 nixos/init:
-	sudo nixos-rebuild switch --flake .#hishikui --extra-experimental-features "nix-command flakes"
+	sudo nixos-rebuild switch --flake .#hishikui --extra-experimental-features "nix-command flakes" --impure
 
 .PHONY: nixos/update
 nixos/update:
-	sudo nixos-rebuild switch --flake .#hishikui
+	sudo nixos-rebuild switch --flake .#hishikui --impure
 
 .PHONY: macos/init
 macos/init:
