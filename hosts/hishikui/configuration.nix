@@ -23,7 +23,7 @@
   services.tailscale.enable = true;
 
   services.logind.extraConfig = ''
-    HandleLidSwitch=ignore
+    HandleLidSwitchExternalPower=ignore
   '';
 
   time.timeZone = "Asia/Tokyo";
