@@ -61,10 +61,57 @@
     masApps = {
       "Amazon Prime Video" = 545519333;
       "Grapplin" = 768053424;
+      "LINE" = 539883307;
       "RunCat" = 1429033973;
       "Tailscale" = 1475387142;
     };
   };
 
   system.stateVersion = 4;
+
+  system.defaults = {
+    loginwindow = {
+      GuestEnabled = false;
+      SHOWFULLNAME = false;
+    };
+    dock = {
+      autohide = true;
+      orientation = "right";
+      show-recents = false;
+      static-only = true;
+      tilesize = 16;
+    };
+    finder = {
+      AppleShowAllExtensions = true;
+      CreateDesktop = false;
+      FXPreferredViewStyle = "Nlsv";
+      ShowPathbar = true;
+    };
+    menuExtraClock = {
+      ShowDate = 0;
+      ShowDayOfWeek = true;
+      ShowSeconds = true;
+    };
+    NSGlobalDomain = {
+      "com.apple.keyboard.fnState" = true;
+      "com.apple.trackpad.scaling" = 3.0;
+      InitialKeyRepeat = 30;
+      KeyRepeat = 2;
+      NSTableViewDefaultSizeMode = 1;
+    };
+    CustomUserPreferences = {
+      "com.apple.desktopservices" = {
+        "DSDontWriteNetworkStores" = true;
+      };
+      "com.apple.finder" = {
+        _FXSortFoldersFirst = true;
+      };
+      "com.apple.TextEdit" = {
+        RichText = false;
+      };
+      NSGlobalDomain = {
+        "com.apple.sound.uiaudio.enabled" = false;
+      };
+    };
+  };
 }
