@@ -19,6 +19,7 @@
     pwntools
     ghq
     gh
+    gnumake
   ];
 
   programs.zsh = {
