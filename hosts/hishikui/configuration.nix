@@ -8,7 +8,6 @@
 
   networking = {
     hostName = "hishikui";
-    nameservers = [ "8.8.8.8" ];
     wireless.enable = false;
     networkmanager.enable = true;
     firewall = {
@@ -16,6 +15,9 @@
       trustedInterfaces = [ "tailscale0" ];
       allowedUDPPorts = [ config.services.tailscale.port ];
     };
+    resolvconf.extraConfig = ''
+      name_servers='8.8.8.8'
+    '';
   };
 
   services.tailscale.enable = true;
