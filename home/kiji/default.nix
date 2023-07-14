@@ -38,6 +38,7 @@
     userEmail = "arata04962@gmail.com";
     signing.key = "C2519FDB42260A71672C89629D4451B39F20F741";
     signing.signByDefault = true;
+    ignores = [ ".DS_Store" ];
     extraConfig = {
       core.ignorecase = false;
       ghq.root = "/Users/user01/src";
