@@ -113,6 +113,9 @@
       "com.apple.TextEdit" = {
         RichText = false;
       };
+      "com.microsoft.VSCode" = {
+        ApplePressAndHoldEnabled = false;
+      };
       NSGlobalDomain = {
         "com.apple.sound.uiaudio.enabled" = false;
       };
