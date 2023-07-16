@@ -64,6 +64,7 @@
       "LINE" = 539883307;
       "RunCat" = 1429033973;
       "Tailscale" = 1475387142;
+      "Microsoft Remote Desktop" = 1295203466;
     };
   };
 
