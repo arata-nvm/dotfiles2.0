@@ -101,6 +101,9 @@
       NSTableViewDefaultSizeMode = 1;
     };
     CustomUserPreferences = {
+      "com.apple.AppleMultitouchTrackpad" = {
+        Clicking = 1;
+      };
       "com.apple.desktopservices" = {
         "DSDontWriteNetworkStores" = true;
       };
