@@ -33,12 +33,16 @@
   homebrew = {
     enable = true;
     onActivation.cleanup = "zap";
+    taps = [
+      "homebrew/cask-fonts"
+    ];
     brews = [
     ];
     casks = [
       "cloudflare-warp"
       "cmd-eikana"
       "discord"
+      "font-hack-nerd-font"
       "fork"
       "ghidra"
       "google-chrome"
