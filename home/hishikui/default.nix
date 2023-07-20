@@ -20,6 +20,7 @@
     ghq
     gh
     gnumake
+    xorg.xhost
   ];
 
   programs.zsh = {

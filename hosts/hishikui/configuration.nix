@@ -14,6 +14,7 @@
       enable = true;
       trustedInterfaces = [ "tailscale0" ];
       allowedUDPPorts = [ config.services.tailscale.port ];
+      allowedTCPPorts = [ 3389 ]; # gnome-remote-desktop
     };
     resolvconf.extraConfig = ''
       name_servers='8.8.8.8'
@@ -46,6 +47,8 @@
 
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+
+  services.gnome.gnome-remote-desktop.enable = true;
 
   services.xserver = {
     layout = "jp";
