@@ -15,6 +15,7 @@
     gnumake
     gnupg
     ripgrep
+    rustup
   ];
 
   programs.zsh = {

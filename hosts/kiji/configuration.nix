@@ -39,6 +39,8 @@
     brews = [
     ];
     casks = [
+      "arc"
+      "burp-suite"
       "cloudflare-warp"
       "cmd-eikana"
       "discord"
@@ -47,11 +49,13 @@
       "ghidra"
       "google-chrome"
       "google-japanese-ime"
+      "jetbrains-toolbox"
       "keybase"
       "kindle"
       "logseq"
       "microsoft-office"
       "microsoft-teams"
+      "minecraft"
       "notion"
       "orbstack"
       "parallels"
@@ -59,12 +63,17 @@
       "slack"
       "spotify"
       "sublime-text"
+      "temurin"
       "visual-studio-code"
       "zoom"
     ];
     masApps = {
       "Amazon Prime Video" = 545519333;
+      "Bitwarden" = 1352778147;
       "Grapplin" = 768053424;
+      "Goodnotes" = 1444383602;
+      "Keynote" = 409183694;
+      "Kindle" = 302584613;
       "LINE" = 539883307;
       "RunCat" = 1429033973;
       "Tailscale" = 1475387142;
