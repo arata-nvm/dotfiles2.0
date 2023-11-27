@@ -4,6 +4,7 @@ nixos/init:
 
 .PHONY: nixos/update
 nixos/update:
+	nix flake update
 	sudo nixos-rebuild switch --flake .#hishikui --impure
 
 .PHONY: macos/init
@@ -16,6 +17,7 @@ macos/init:
 
 .PHONY: macos/update
 macos/update:
+	nix flake update
 	nix build .#darwinConfigurations.kiji.system 
 	./result/sw/bin/darwin-rebuild switch --flake .#kiji
   
