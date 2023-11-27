@@ -61,9 +61,9 @@
       "parallels"
       "rectangle"
       "slack"
-      "spotify"
       "sublime-text"
       "temurin"
+      "via"
       "visual-studio-code"
       "zoom"
     ];
