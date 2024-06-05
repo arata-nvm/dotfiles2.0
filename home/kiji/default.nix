@@ -25,6 +25,7 @@
     initExtra = ''
       eval "$(/opt/homebrew/bin/brew shellenv)"
       alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+      . /opt/homebrew/opt/asdf/libexec/asdf.sh
     '';
   };
 
@@ -45,6 +46,8 @@
       ghq.root = "/Users/user01/src";
       color.ui = true;
       pull.rebase = false;
+      diff.tool = "difftastic";
+      diff.external = "difft";
     };
   };
 
