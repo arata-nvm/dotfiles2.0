@@ -61,6 +61,7 @@
       "logseq"
       "minecraft"
       "notion"
+      "ollama"
       "orbstack"
       "parallels"
       "parsec"
