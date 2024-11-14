@@ -32,13 +32,14 @@
 
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap";
+    onActivation.cleanup = "none";
     taps = [
       "homebrew/cask-fonts"
     ];
     brews = [
       "asdf"
       "difftastic"
+      "llvm"
       "pinentry-mac"
       "openssh"
     ];
@@ -51,6 +52,7 @@
       "firefox@developer-edition"
       "font-hack-nerd-font"
       "fork"
+      "gather"
       "ghidra"
       "google-chrome"
       "google-japanese-ime"
